@@ -1,3 +1,8 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter.ttf);
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,6 +16,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: inter;
+    color: aliceblue;
+    position: relative;
+    overflow: hidden;
+}
+
+#overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/2943627/pexels-photo-2943627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    transform: scale(1.2);
 }
 
 #wrapper h1,
@@ -20,10 +43,12 @@
 
 #wrapper h1{
     font-size: 60px;
+    position: relative;
 }
 
-#wrapper div{
+#range{
     font-size: 30px;
+    position: relative;
 }
 
 #img{
@@ -33,4 +58,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
