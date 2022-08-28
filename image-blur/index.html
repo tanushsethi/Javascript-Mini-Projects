@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <title>Image Blur</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="wrapper">
             <div id="overlay"></div>
-            <h1>Updating CSS variables with Javascript</h1>
+            <h1>Updating <span id="colorJ">CSS variables</span> with Javascript</h1>
             <div id="range">
                 <label for="spacing">Spacing</label>
-                <input type="range" name="spacing" min="0" max="100">
+                <input type="range" name="spacing" min="0" max="100" data-pre="px">
                 <label for="blur">Blur</label>
-                <input type="range" name="blur" min="0" max="100">
+                <input type="range" name="blur" min="0" max="100" data-pre="px">
                 <label for="color">Color</label>
                 <input type="color" name="color" value="#ffc600">
             </div>
