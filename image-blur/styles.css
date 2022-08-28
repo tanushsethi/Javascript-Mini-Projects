@@ -5,13 +5,14 @@
 
 :root{
     --color: #ffc600;
-    --spacing: 20px;
+    --spacing: 0px;
     --blur: 0px;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 #wrapper{
