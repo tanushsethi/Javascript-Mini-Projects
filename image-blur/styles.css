@@ -3,10 +3,15 @@
     src: url(fonts/Inter.ttf);
 }
 
+:root{
+    --backgroud: #ffc600;
+    --spacing: 20px;
+    --blur: 0px;
+}
+
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
 }
 
 #wrapper{
@@ -51,12 +56,22 @@
     position: relative;
 }
 
-#img{
+#range input{
+    margin-right: 40px;
+}
+
+img{
     height: 400px;
     width: 800px;
-    background-image: url(https://images.pexels.com/photos/2943627/pexels-photo-2943627.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    object-fit: cover;
     position: relative;
+    padding: var(--spacing);
+    background-color: #ffc600;
+    filter: blur(var(--blur));
 }
+
+/* #img-con{
+    height: 400px;
+    width: 800px;
+    position: relative;
+} */
